@@ -1,0 +1,21 @@
+page-documents {
+    .document_box {
+        background: $yellow_color;
+        align-items: center;
+        height: 140px;   
+        float: left;
+        ion-card-header {
+            padding-top: 33px;
+            padding-bottom: 10px;
+            img {
+                width: auto;
+                display: inline-block;
+            }
+        }
+        ion-card-content {
+            font-size: 18px;
+            color: #000000;
+            font-weight: 500;
+        }
+    }
+}

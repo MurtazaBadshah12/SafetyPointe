@@ -1,0 +1,56 @@
+
+
+<ion-content>
+  <!-- <ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+    </ion-item>
+  </ion-list> -->
+
+  <ion-row>
+    <ion-col col-12 text-center class="store_view">
+      <ion-card>
+        <ion-card-header>
+          200
+        </ion-card-header>
+        <ion-card-content>
+          Available Points
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12 text-center class="store_check_out">
+      <ion-card>
+        <ion-label float-left no-margin>Items Available</ion-label>
+        <button ion-button no-margin class="chekout" float-right>CHECKOUT</button>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-item *ngFor="let item of items" padding>
+      <ion-thumbnail *ngIf="item.thumbnailUrl" item-left>
+        <img src="../assets/imgs/no-img.png">
+      </ion-thumbnail>
+      <h2>{{item.title}}</h2>
+      <p class="itm_id_points">
+        {{item.id}}
+      </p>
+      <p>
+        {{item.albumId}}
+      </p>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 text-center>
+        <button ion-button block (click)="orderItems()">
+          Order Items</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

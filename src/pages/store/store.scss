@@ -1,0 +1,93 @@
+page-store {
+    .store_view {
+        padding: 0;
+        background: $yellow_color;
+        ion-card {
+            background: none;
+            box-shadow: none;
+            ion-card-header {
+                font-size: 44px;
+                line-height: 52px;
+                color: #230A0E;
+                font-weight: 700;
+                padding-bottom: 0;
+            }
+            ion-card-content {
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;
+                font-weight: 500;
+            }
+        }
+    }
+    // .store_check_out {
+    //     background: $light_grey;
+    //     ion-card {
+    //         background: none;
+    //         box-shadow: none;
+    //         margin-top: 8px;
+    //         margin-bottom: 8px;
+    //         ion-label {
+    //             color: #777777;
+    //             font-size: 18px;
+    //         }
+    //         button {
+    //             background: none;
+    //             border: 1px solid #a8a8a8;
+    //             height: 33px;
+    //             padding: 0 20px;
+    //             line-height: 33px;
+    //             font-size: 16px;
+    //             text-transform: uppercase;
+    //             text-align: center;
+    //             border-radius: 3px;
+    //             color: #b3acad;
+    //             box-shadow: none;
+    //             font-weight: 500;
+    //         }
+    //         ion-label {
+    //             line-height: 33px;
+    //         }
+    //     }
+    // }
+    // .item-block {
+    //     box-shadow: 0 -1px 0 0 #BFBFBF;
+    //     &:first-child {
+    //         border:none !important;
+    //     }
+    //     .item-inner {
+    //         border:none !important;
+    //         ion-label {
+    //             h2 {
+    //                 font-size: 18px;
+    //                 color: #000000;
+    //                 line-height: 22px;
+    //                 font-weight: 500;
+    //             }
+    //         }
+    //         p {
+    //             color: #000000;
+    //             font-size: 14px;
+    //             font-weight: 500;
+    //             &.itm_id_points {
+    //                 color: #E16D00;
+    //             }                
+    //         }
+    //     }
+    //     ion-thumbnail {
+    //         width: 66px;
+    //         height: 74px;
+    //         border-radius: 3px;
+    //         min-width: auto;
+    //         min-width: auto;
+    //         margin-top: 0 !important;
+    //         margin-bottom: 0 !important;
+    //         img {
+    //             width: 100%;
+    //             height: 74px;
+    //             object-fit: cover;
+    //             border-radius: 3px;
+    //         } 
+    //     }
+    // }
+}

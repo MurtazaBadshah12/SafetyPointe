@@ -1,0 +1,58 @@
+page-tabs {
+    .tabs {
+        .tabbar {
+            padding: 0 15px;
+            background:#000;
+            .tab-button {
+            min-height: 70px;
+            position: relative;
+            .tab-button-icon {
+                font-size: 30px;
+            }
+            .tab-button-text {
+                color:#ffffff;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+        }
+    }     
+    .tabs-md .tab-button[aria-selected=true]{
+        &::after{
+            position: absolute;
+            height: 5px;
+            background: #FFCB00;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .tab-button-icon {
+            color: #ccc;
+        }
+        .tab-button-text {
+            color: #ccc;
+        }
+    }  
+
+    .tabs-ios .tab-button[aria-selected=true]{
+        &::after{
+            position: absolute;
+            height: 5px;
+            background: #FFCB00;
+            content: '';
+            left: 0;
+            top: -1px;
+            width: 100%;
+        }
+        .tab-button-icon {
+            color: #ccc;
+        }
+        .tab-button-text {
+            color: #ccc;
+        }
+    }
+}
+
+

@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar class="head_body" text-center>
+    <!--<ion-title padding>
+       <ion-icon name="medkit" padding-right></ion-icon>Egan Safety</ion-title> -->
+    <img src="../assets/imgs/safetypointe.png">
+    <ion-list padding no-margin>
+      <ion-item>
+        <!-- <ion-label>Select jobsite...</ion-label> -->
+        <ion-select placeholder="Select jobsite..." [(ngModel)]="gaming" class="tb_LPselect">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item detail-push no-padding>
+      <img src="../assets/imgs/icon-hospital.png" srcset="../assets/imgs/icon-hospital@2x.png 2x" padding-right>Hospital</ion-item>
+    <ion-item detail-push no-padding>
+      <img src="../assets/imgs/icon-police.png" srcset="../assets/imgs/icon-police@2x.png 2x" padding-right>Police</ion-item>
+    <ion-item detail-push no-padding>
+      <img src="../assets/imgs/icon-firestation.png" srcset="../assets/imgs/icon-firestation@2x.png 2x" padding-right>Fire Station</ion-item>
+  </ion-list>
+  <ion-grid>
+  <ion-col col-12 class="padTB">
+  <button ion-button block class="call_btn" no-margin>Call 911</button>
+</ion-col>
+</ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 text-center>
+        <ion-card class="yellow-bg" no-margin>
+          <ion-card-header class="font-s">
+            2146
+          </ion-card-header>
+          <ion-card-content class="font-small">
+            Days since accident
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <ion-card class="yellow-bg" no-margin>
+          <ion-card-header  class="font-s">
+            0.96
+          </ion-card-header>
+          <ion-card-content  class="font-small">
+            EMR rate
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 text-center>
+        <ion-card  class="yellow-bg" no-margin>
+          <ion-card-header  class="font-s">
+            1.02
+          </ion-card-header>
+          <ion-card-content  class="font-small">
+            Incident rate
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <ion-card  class="yellow-bg" no-margin>
+          <ion-card-header  class="font-s">
+            0.00
+          </ion-card-header>
+          <ion-card-content  class="font-small">
+            D.A.R.T.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
